@@ -1,0 +1,275 @@
+\documentclass[pre,amsmath,amssymb, twocolumn, showpacs]{revtex4}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{mathptmx}
+\usepackage{subfigure}
+\usepackage[utf8]{inputenc}
+\usepackage{bbold}
+\usepackage{color}
+\usepackage{xcolor}
+\graphicspath{{Images2/}{../Images2/}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Epar}{E_{\|}}
+\newcommand{\Eperp}{E_\bot}
+\newcommand{\Lpar}{L_{\|}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\xx}{\mathbf{x}}
+
+\newcommand{\Ata}[1]{{\color{red} #1}}
+
+\makeatletter
+
+\begin{document}
+\renewcommand{\tablename}{{\bf Tabla}}
+\renewcommand{\figurename}{{\bf Fig.}}
+
+\title{Reporte práctica 3: Microscopía por emisión de campos}
+\author{Eduardo Esquivel Ramírez, Jonathan Lozano Mayo}
+\email{edy_95fis@ciencias.unam.mx, jonathanloz.m@gmail.com}
+\affiliation{Universidad Nacional Autónoma de México, Facultad de Ciencias, México
+}
+\author{Profesores: M. en C. Laura Helena González Trueba, Dr. Juan López Patiño, Dr. Rodolfo Ezequiel López Romero. Ayudante: Miguel Ángel Campos González}
+
+\affiliation{Universidad Nacional Autónoma de México, Facultad de Ciencias, México
+}
+
+ 
+\date{\today}
+\begin{abstract}
+
+\vspace{0.3cm}
+Resumen: 
+
+\end{abstract}
+
+
+\maketitle
+
+
+\section{Introducción}
+
+\textbf{Emisión de campo}
+
+La emisión de campo, es la emisión de electrones cuando un campo eléctrico muy fuerte es aplicado a un emisor. Una barrera de potencial en la interfaz del sólido se convierte en un barrera cuyo grosor depende del campo aplicado, de modo que algunos electrones no excitados pueden penetrar la barrera mediante túnelaje cuántico, generando una corriente cuya densidad es característica del proceso.Clásicamente el fenómeno puede explicarse en términos de la función de trabajo del metal, veamos que podemos escribir un nuevo potencial efectivo para los electrones en la superficie
+\begin{equation}
+  U_{eff}(x)=U_0-eEx-\frac{e^2}{4x}  
+\end{equation}
+
+donde el segundo término del lado derecho de la ecuación (1) corresponde a la influencia del campo eléctrico aplicado, mientras que el tercer término se debe al surgimiento de una carga imagen en el metal, o una fuerza de polarización. El potencial efectivo tiene un máximo en el punto $x_0=\sqrt{e^3E}$, siendo el valor máximo de la energía potencial
+
+\begin{equation}
+  U_{max}(x)=U_0-\sqrt{e^3E} 
+\end{equation}
+ por lo que podemos observar que la imposición de un campo eléctrico reduce la función de trabajo. En este sentido para que los electrones sean libres de dejar el metal tan solo necesitamos que se cumpla la siguiente condición
+ 
+ \begin{equation}
+  \sqrt{e^3E} \geq \Phi
+\end{equation}
+
+donde $\Phi$ es la función de trabajo.
+Si bien el modelo anterior predice la disminución de la función de trabajo debido a la imposición de un campo eléctrico, se ha observado que se pueden tener átomos libres de escapar del metal con campos aún más pequeños que los estimados con la teoría clásica, es por eso que es necesaria la descripción cuántica del fenómeno. El estudio cuántico del fenómeno de emisión de campos fue realizado por Fowler-Nordheim quienes haciendo uso de la aproximación WKB encontraron que la penetrabilidad de la barrera está dada por 
+
+\begin{equation}
+ \mathcal{D}=exp\left[-2\sqrt{\frac{8\pi^2m}{\hbar^2}}\int^{x_2}_{x_1}\left\vert\left[\mathcal{E}-(-eEx-\frac{e^2}{4x} )\right]\right\vert^{\frac{1}{2}}dx\right]
+\end{equation}
+
+Con esta descripción se han estimado valores más aproximados a los medidos experimentalmente para el campo eléctrico necesario para permitir el escape de los electrones de la superficie del metal[1]. 
+
+\textbf{Microscopio de emisión de campos}
+
+El microscopio de emisión de campos (FEM) fue inventado en 1936 por Erwin Wilhelm Müller, este fue el primer microscopio capaz de resolver a una escala atómica. 
+El FEM es básicamente compuesto por una muestra metálica en forma de punta y una pantalla fluorescente, ambas encerradas al vacío. De manera simple el microscopio funciona mediante la aplicación de un voltaje a la punta o emisor, luego cuando el campo aplicado alcanza el valor adecuado los electrones en la superficie de la punta son emitidos fuera de la misma mediante el efecto de tunelaje cuántico. Los electrones emitidos son proyectados en una pantalla de fósforo en la cual se forma una imagen de la superficie. Ya que la densidad de corriente de electrones depende de la variación de la función de trabajo, la imagen de la proyección radial de los electrones emitidos representa un mapeo de la variación de la función de trabajo en la superficie. La mayoría de los electrones emitidos se encuentran en una vecindad del nivel de Fermi, por otra parte la gran energía cinética de los electrones combinada con los efectos de difracción debido a los limites de la longitud de onda de de Broglie imponen un límite para la resolución del microscopio de emisión de campo. 
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=130pt]{CFEM.png}
+    \caption{1 cables de corriente; 2 Arco; 3 Muestra;  4 Bulbo; 5 Pantalla luminiscente; 6 Cable de corriente.}
+    \label{fig:my_label}
+\end{figure}
+
+En la figura 1 podemos ver el circuito básico de un microscopio de emisión de campo clásico. En el microspocio se soldan cables de corriente (1) a un arco de molibdeno o tugnsteno en (2) y a la vez la muestra (3) está unida a este arco. Luego el bulbo (4) tiene una pantalla (5) donde la imagen de los electrones emitidos por la superficie es formada, esta pantalla usualemente es de una pequeña capa de fósforo. Se aplica un voltaje alto en (5) atraves del cable (6) de manera que los electrones emitidos bombardean la pantalla causando su luminiscencia.[2]
+
+En la imagen que se formada en la pantalla se presentan contrastes debido a las variaciones de la función de trabajo de los electrones, en este sentido los planos atómicamente "planos" tienen una función de trabajo alta lo que se refleja en la imagen de la pantalla como espacios obscuros en la misma, mientras que los planos atómicamente "rugosos" tienen una función de trabajo de los electrones menor manisfestandose como regiones brillosas en la imagen formada. Debido a la naturaleza radial de los caminos de los electrones la simetria de la muestra se preserva en la imagen,por lo que puede relacionarse con la proyección estereográfica de la superficie original.[3]
+
+
+\textbf{Estructura Cristalina}
+
+Hay dos aspectos de la descripción de la estructura cristalina que suponen una cierta dificultad, las nociones geométricas que esperamos sean fáciles de superar y por otro lado se tiene que establecer un lenguaje para describir estructuras de una forma inteligente. La descripción de las estructuras cristalinas se puede hacer en cualquier dimensión, por ahora nos limitaremos a las estructuras tres dimensionales que podemos ver experimentalmente y las que nos interesan para el desarrollo de esta práctica. Primero estableceremos unas definiciones que en general son lo menos rigurosas posibles, pero que nos funcionan para darnos una idea básica de lo que vamos a trabajar.
+
+Una \textit{red} es un conjunto disctreto infinito de puntos donde los alrededores de cada punto dado es equivalente a los alrededores de cualquier otro punto. De esta forma una estructura periódica puede ser respresentada como una red donde cada punto es ocupado por un objeto repetido, estos objetos repetidos son llamados \textit{base}. Es en este sentido que un \textit{cristal} es una estructura periódica Fig. 1.
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=130pt]{red.jpg}
+    \caption{Un cristal es una estructura periódica con una red y base definidas.}
+    \label{fig:my_label}
+\end{figure}
+
+Una vez que sabemos lo que es un cristal, podemos plantear algunos conceptos útiles para caracterizarlos. Una \textit{celda unitaria} es el bloque de contrucción básico que se repite en la estructura periódica. Más aún, una \textit{celda unitaria primitiva} para un cristal periódico es la celda unitaria que contiene exactamente un punto de la red. 
+
+La diferencia de estos dos conceptos es que la primitiva solo contiene un punto de la red, mientras que la unitaria puede contener más de un punto. La noción geométrica juega un papel importane para darnos cuenta de lo que estamos hablando, por ejemplo, imaginemos una esfera centrada en el orígen en tres dimensiones, si imaginamos que el espacio esta divido por cada eje coordenado tendremos ocho divisiones u ocho "octantes" y la esfera quedaría partida en ocho partes iguales. Si ahora pensamos en un cubo, donde en cada vértice hay una esfera, tendremos que cada esfera se divide exactamente como antes lo habiamos planteado. Se tienen ocho vertices y dentro del cubo quedaran ocho octantes, lo que significa que esta celda cúbica contiene exactamente una unidad de la red, es una primitiva. En general se pueden utilizar las dos definiciones para describir a un cristal.
+
+El \textit{parámetro de red} es la distancia entre dos puntos de la red que se encuentran sobre los ejes coordenados, en este sentido la red más simple en tres dimensiones es aquella formada por celdas unitarias cúbicas (cúbica simple), es decir que tiene parámetros de red iguales en las 3 direcciones, existen otras más complejas donde cada lado de la celda unitaria varía en tamaño pero dejando los ángulos entre las aristas rectos, y algunas otras donde cambia el tamaño de las aristas y el ángulo entre las mismas, sin embargo, en todos los casos se utiliza una convención para representar direcciones dentro de la celda unitaria, se escribe:
+
+\begin{equation}
+    [uvw]=ua_1+va_2+wa_3
+\end{equation}
+
+donde \textit{u}, \textit{v}, \textit{w}  son enteros y $a_1, a_2, a_3$ son vectores, para los casos donde la celda unitaria de la red tiene ángulos rectos entre todas sus aristas se asume que $a_1, a_2, a_3$ se encuentran en las direcciones $x, y, z$ del sistema coordenado cartesiano.
+
+Una red de nuestro interés es aquella que tiene una celda cúbica centrada en el cuerpo (bcc) (body-centered cubic, por sus siglas en inglés) Fig. 2.
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=130pt]{bcc.png}
+    \caption{Celda unitaria cúbica centrada en el cuerpo}
+    \label{fig:my_label}
+\end{figure}
+
+Es una celda cúbica simple donde hay un punto adicional de la red centrada justo en el medio del cubo es decir que tiene en total dos unidades de la base dentro de la celda.
+
+El siguiente concepto a definir es el \textit{plano cristalográfico}, es un plano que contiene al menos 3 puntos de la red no colineales, y asi una \textit{familia de planos cristalográficos} es un conjunto infinito de planos paralelos que como conjunto contienen a todos los puntos de la red. Hay una notación útil para referirse a un plano cristalográfico conocido como índices de Miller, primero se seleccionan los vectores $a_i$ con i=1,2,3 para la celda unitaria en cuestión luego se toma el recíproco de cada entero que multiplica a cada vector de dirección (como en la ecuación 1) para obtener:
+
+\begin{equation}
+    (hlk) = ha_1+la_2+ka_3 
+\end{equation}
+
+donde h, l, k son los reciprocos de u, v, w que nos van a indicar en qué puntos el plano cruza a la red, por ejemplo (111) nos indica que el plano cruza en 1 en $a_1$, 1 en $a_2$ y 1 en $a_3$, de esta forma, como el procedimiento para encontrar los planos en cada celda unitaria es exactamente el mismo, los índices de Miller nos van a dar familias de planos. 
+
+
+Dentro de las estructuras cristalinas en tres dimensiones se pueden presentar defectos de 3 tipos, de linea, de plano o de volumen no nos detendremos en la descripción de cada uno, lo importante es señalar que existen y que estos defectos interrumpen o rompen la simetría del cristal. En este sentido tenemos dos clasificaciones de los cristales, de largo y corto alcance. Un cristal de \textit{corto alcance} es un cristal que tiene muchos defectos y por lo tanto su simetría se rompe constantemente lo que implica que su estructura periódica sólo se presenta en una región pequeña del espacio. Un cristal de \textit{largo alcance} presenta pocos defectos y su estructura periódica se repite a lo largo de una región mucho más grande del espacio, un \textit{monocristal} es un cristal de largo alcance.
+
+
+\section{Material}
+\begin{itemize}
+    
+    \item Microscopio de emisión de campos. Leybold Didactic GMBH
+    \item Fuente de Energía. Daedalon Corporation Kilovolt Power Supply
+    \item Cámara Fotográfica. Fujifilm Finepix S
+    \item Tripie
+    \item Mesa elevadora
+    \item Vernier
+    \item Soportes universales con nuez (2)
+    \item Pinzas para soporte
+    \item Resistencia de 5.24 M $\Omega$
+    
+\end{itemize}
+
+\section{Desarrollo Experimental}
+
+\textbf{Montaje Experimental}
+Primero se montó el circuito que requiere el microscopio para funcionar, para esto se requiere una fuente de poder que nos pueda proporcionar voltajes del orden de 5kV, la terminal positiva de la funete se debe conectar en serie con una resistencia de 5.24 M$\Omega$ y esta a su vez conectarse al ánodo del microscopio, la terminal negativa se conecta al cátodo. ver Fig. \textbf{Figura}.Es muy importante colocar la resistencia ya sea del valor mencionado o de uno diferente, de tal forma que la corriente no supere 1.9A, pues corrientes mayores a eso destruirán instantáneamente el microscopio, nosotros estamos manejado corrientes de 9.54x$10^{-4}$A. Se debe tener cuidado al manejar y trasladar de un lado a otro el microscopio, pues el interior del mismo se encuentra al vacío y un ligero golpe o un poco de presión pueden provocar que estalle, además, se debe tener cuidado de no hacer un corto circuito con la fuente de voltaje ni tocar con las manos las terminales una vez que se ha empezado el experimento pues los voltajes alcanzados son extremadamente altos y pueden ocasionar un accidente severo. 
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=250pt]{Circuito.png}
+    \caption{Montaje esquemático del circuito. 1: Cátodo, 2: Anodo, 3: Resistencia de 5.24M$\Omega$ 4: Fuente de poder.}
+    \label{fig:my_label}
+\end{figure}
+
+Para capturar las imágenes que proporcione el microscopio vamos a utilizar la cámara fotográfica, para evitar paralaje se debe colocar a la misma altura que el microscopio, colocamos el microscopio en un soporte universal y la cámara montada sobre un tripie y una mesa elevadora. Finalmente se agrega un vernier sujetado por las pinzas colocadas con una nuez a el segundo soporte universal de tal forma que sea paralelo al plano de la imagen del microscopio , esto se hace para tener una referencia de longitud dentro de las imágenes capturadas por la cámara y poder analizarlas posteriormente. \textbf{ver fig}
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=250pt]{montaje.png}
+    \caption{Montaje experimental. 1: Cámara fotográfica, 2: Fuente de Voltaje, 3: Vernier 4: Microscopio de emisión de campos.}
+    \label{fig:my_label}
+\end{figure}
+
+Después de varias pruebas se determinó que las mejores imágenes se obtienen con un ISO 100, 6'' de tiempo de obturación y un foco F2.9. Se deben obtener varias fotos con la finalidad de poder escoger las mejores para ser analizadas.
+
+\textbf{Microscopio de Emisión de Campos}
+
+El microscopio contiene en la punta del cátodo un monocristal de tungsteno cuya celda unitaria es una celda cúbica centrada en el cuerpo \textbf{VER FIG} con parámetro de red $a = 0.316nm$, el monocristal es de aproximadamente $0.1\mu$m a $0.2\mu$m de radio y esta orientado de tal forma que el plano (110) es perpendicular a la dirección del cátodo, es decir, la dirección [110] es paralela al cátodo. 
+
+El microscopio contiene una pantalla fluorescente de fósforo, en la cual se obtendrán las imágenes, es en esta pantalla donde se obtendrá una maginficación de la estructura cristalina del monocristla de tungsteno. Para lograr obtener imágenes se debe aplicar una diferencia de potencial de 5kV, este voltaje se debe aplicar muy suavemente partiendo siempre desde 0V, esto es para cuidar el microscopio y no dañarlo pues la punta del cátodo se calienta y cambios bruscos de temperatura pueden dañar el monocristal de tungsteno.
+
+Por otra parte, en el ánodo se cuenta con depósito de bario, que al calentarlo desprende átomos y se pueden observar en la pantalla como destellos brillosos, esta parte del experimento no se llevará a cabo, pues el bario evaporado se deposita en el monocristal de tungstento contaminandolo y su limpieza es muy difícil, por lo que no sobrepasaremos los 5kV y por ende no calentaremos el ánodo hasta la temperatura en que se empieza a evaporar el bario.
+
+\textbf{Amplificación}
+
+Podemos obtener la amplificación delmicroscopio podemos hacer un análisis geométrico muy simple, si tenemos dos circunferencias concéntricas de radios r y R tal que R>r, dos puntos en la circunferenica con radio r estarán separados una distancia lineal $s = r \theta$, si pasamos dos rayos desde el centro hasta cada uno de los puntos y los extendemos hasta la circunferencia de radio R, la distancia lineal entre los mismos puntos ahora será $S = R\theta$ por lo que la amplificación será la razón entre estas dos longitudes: 
+
+\begin{equation}
+    A = \frac{S}{s}= \frac{R\theta}{r\theta}=\frac{R}{r}
+\end{equation}
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=200pt]{Amplificacion.png}
+    \caption{Dos círculos concéntricos de radios r y R, la distancia lineal "s" entre dos puntos sobre la circunfelencia más pequeña se ve amplificada por un factor $A = \frac{R}{r}$  }
+    \label{fig:my_label}
+\end{figure}
+
+De manera teórica el manual del microscopio nos da un intervalo  sobre el radio más pequeño $r=0.1\mu$m a $r=0.2\mu$m, este radio corresponde a el radio del monocristal de tungsteno que se encuentra depositado en la punta del cátodo, experimentalmente no tenemos forma de corroborar este dato por lo que lo asumiremos como cierto. Además el manual asegura que el radio mayor, que es el radio del bulbo en el cual está contenido el cátodo, mide 5cm lo que les da una A=500,000 aproximadamente, este dato se tiene que verificar experimentalmente midiendo con un vernier el radio del bublo.
+
+Se debe de determinar de forma teórica la imagen que se espera observar para poder hacer un análisis significativo de las imágenes, en este sentido se determinó lo siguiente: se sabe que el monocristal esta orientado de tal forma que el plano cristalográfico (110) es perpendicular a la aguja del cátodo, en tres dimensiones corresponde a lo siguiente:
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=200pt]{modelo3d.png}
+    \caption{Modelo en 3D de la celda unitaria del monocristal de tungsteno, se muestra en color amarillo el plano cristalográfico (110) que es perpendicular la punta del cátodo y con una flecha se muestra la dirección cristalográfica correspondiente}
+    \label{fig:my_label}
+\end{figure}
+
+Podemos imaginar la imagen que aparecerá en la pantalla de una forma esquemática si hacemos una proyección de la celda unitara sobre el plano (110), la razon por la que podemos hacer esto, es debido a que podemos imaginar que los electrones que se desprenden del monocristal viajarán en una línea recta hasta llegar a la pantalla de fósforo, los puntos que aparezcan en la imagen tendrán distintas intensidades dependiendo de las variaciones de la función de trabajo sobre el monocristal de tungsteno. 
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=200pt]{proyeccion.png}
+    \caption{Proyección de dos celdas unitarias contiguas sobre el plano (110), además se muestra la distancia entre dos puntos de la imagen que son los puntos más alejados dentro de la celda unitaria, donde a es el parámetro de la red. La celda de arriba es la celda original que teníamos en el modelo 3D, la celda de abajo es directamente la celda contigua}
+    \label{fig:my_label}
+\end{figure}
+
+Hemos de darnos cuenta que si la dirección [110] es paralela a la aguja, veremos dos celdas unitarias, pues justo esa dirección está en el limite de dos celdas unitaras contiguas. Además como se analizarán imágenes que son proyecciones planas de un mundo tres dimensional, necesitamos traer eso en cuenta a la hora de medir distancias en las imágenes, pues no mediremos arcos de circunferencias, mediremos las proyecciones de esos arcos en un plano, es decir, la distancia que veremos es $rsin\theta$, donde $\theta$ es el ángulo que forma el punto en la superficie de la circunferencia y una recta que consideraremos como la direccion [110] de la primer celda unitaria que se encuentra inmediatamente después de la aguja del cátodo.
+
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=200pt]{correccion.png}
+    \caption{El análisis geométrico correspondiente a la corrección que debemos hacer para poder medir distancias en las imágenes recolectadas.}
+    \label{fig:my_label}
+\end{figure}
+
+
+Podemos darnos cuenta que el parámetro de la red aparecerá como una distancia medible en la imagen, esto se urará después para determinar el parámetro de red experimentalmente. 
+
+Teoricamente se pueden considerar dos casos extremos, o bien la imagen que aparecerá es la imagen de la celda que se encuentra más cerca del centro de la esfera o semiesfera del monocristal, o bien aparecerá la celda que se encuentra en la superficie de la esfera. Lo que se determina teóricamente es el ángulo que forman tres puntos: el centro y dos puntos de la red tal que los puntos son colinealies en la proyección en la celda unitaria en dos dimensiones, en este caso tomaremos los puntos de la red que caen en en las direcciones [110] y [100], para la celda más cercana al centro será $\theta = tan^{-1}(\frac{\sqrt{2}a}{2}/\frac{\sqrt{2}a}{2})$ mientras que para la celda más alejada será $\theta=tan^{-1}(r-\frac{\sqrt{2}a}{2}/\frac{\sqrt{2}}{2}) $
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=250pt]{theta.png}
+    \caption{El análisis geométrico correspondiente a la corrección que debemos hacer para poder medir distancias en las imágenes recolectadas.}
+    \label{fig:my_label}
+\end{figure}
+
+por lo que en un caso tenemos $\theta = 45°$ y en otro caso $\theta=5.7$x$10^{-6}°$ lo que nos implica que teoricamente una distancia rsin(45°) en la superficie del monocristal se verá de un tamaño de 35.3 cm en nuestra imagen, mientras que una distancia rsin($5.7$x$10^{-6}°$) se verá de un tamaño igual a $5.0^{-9}$m algo que experimentalmente es imposible de detectar con las herramientras que disponemos, por lo que este último caso, donde la imagen que observemos proviene de una celda prácticamente en la superficie del monocristal queda completamente descartado y por consiguiente estaremos buscando distancias del orden de la primera suposición.
+
+
+\section{Análisis de Datos}
+
+
+\section{Resultados y Discusión}
+
+
+
+\section{Conclusiones}
+
+\section{Bibliografía}
+
+[1]Tsong,T.(2017) \textit{Atom-Probe field ion Microscopy}.New York, Estados Unidos: Cambridge University Press.
+
+[2]LifshitS,V.G.(2003) \textit{Surface Science}. Vladivostok, Rusia: Springer.
+
+[3]Nicolay,E.(2017) \textit{Field emission electronics}. St.Petersburg, Rusia: Springer.
+
+[4] Steven, H. S. (2013) \textit{The Oxford Solid State Basics}. Oxford, Reino Unido: Oxford University Press.
+
+
+
+\section{Apéndices}
+
+\end{document}
