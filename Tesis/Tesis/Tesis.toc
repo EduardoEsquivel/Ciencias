@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}
+\contentsline {part}{I\hspace {1em}Primera parte}{1}% 
+\contentsline {chapter}{\numberline {1}Sobre el est\IeC {\~A}\IeC {\-}lo}{2}% 
+\contentsline {section}{\numberline {1.1}Uso del paquete}{2}% 
+\contentsline {chapter}{\numberline {2}Caracter\IeC {\~A}\IeC {\-}sticas del estilo}{4}% 
+\contentsline {section}{\numberline {2.1}Section}{4}% 
+\contentsline {subsection}{\numberline {2.1.1}Subsection}{4}% 
+\contentsline {subsubsection}{Subsubsection}{4}% 
+\contentsline {paragraph}{Paragraph}{4}% 
+\contentsline {subparagraph}{Subparagraph}{4}% 
+\contentsline {section}{\numberline {2.2}Etiquetas}{6}% 
+\contentsline {section}{\numberline {2.3}Matem\IeC {\~A}\IeC {\textexclamdown }ticas y texto}{7}% 
+\contentsline {section}{\numberline {2.4}Lista de entornos}{8}% 
+\contentsline {section}{\numberline {2.5}Entornos como teoremas}{9}% 
+\contentsline {chapter}{\numberline {A}El primer ap\IeC {\~A}\IeC {\textcopyright }ndice}{11}% 

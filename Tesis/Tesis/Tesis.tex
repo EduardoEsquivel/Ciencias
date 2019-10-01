@@ -1,0 +1,417 @@
+\documentclass[11pt,spanish]{report}
+\usepackage[square]{natbib}
+\usepackage[spanish,mexico]{babel}
+\usepackage{UNAMThesis}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{booktabs}
+
+\logounam{Escudo-UNAM}
+\logoinstitute{Escudo-Dependencia}
+\pagenumbering{roman}
+\flushbottom
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{acknowledgement}{Agradecimiento}[section]
+\newtheorem{algorithm}{Algoritmo}[section]
+\newtheorem{axiom}{Axioma}[section]
+\newtheorem{case}{Caso}[section]
+\newtheorem{claim}{DeclaraciÃ³n}[section]
+\newtheorem{conclusion}{ConclusiÃ³n}[section]
+\newtheorem{condition}{CondiciÃ³n}[section]
+\newtheorem{conjecture}{Conjectura}[section]
+\newtheorem{corollary}{Corolario}[section]
+\newtheorem{criterion}{Criterio}[section]
+\newtheorem{definition}{DefiniciÃ³n}[section]
+\newtheorem{example}{Ejemplo}[section]
+\newtheorem{exercise}{Ejercicio}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{notation}{NotaciÃ³n}[section]
+\newtheorem{problem}{Problema}[section]
+\newtheorem{proposition}{ProposiciÃ³n}[section]
+\newtheorem{remark}{ObservaciÃ³n}[section]
+\newtheorem{solution}{SoluciÃ³n}[section]
+\newtheorem{summary}{Resumen}[section]
+\newenvironment{proof}[1][DemostraciÃ³n]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+\title{Plantilla de tesis UNAM}
+\author{Un autor con suerte}
+\prevdegrees{Grados previos}
+\prevdegrees{Grados previos}
+\institute{Mi Instituto}
+\department{Mi programa de estudios}
+\degree{El grado que busco}
+\supervisor{Mi tutor}
+\city{Mi ciudad}
+\degreemonth{Mes}
+\degreeyear{AÃ±o}
+\maketitle
+
+\begin{dedication}
+A pesar de la distancia y del\\
+tiempo ido, sÃ³lo puedo dedicar:\\
+A todos y ninguno...\\
+\textsc{Julio A. Freyre-Gonz\'{a}lez}
+\end{dedication}
+
+\begin{acknowledgements}
+Gracias a cada una de las personas que me apoyaron e hicieron que
+este sueÃ±o se cristalizara en una hermosa realidad.
+\end{acknowledgements}
+
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\clearpage
+
+\begin{foreword}
+Redacte aquÃ­ el prÃ³logo contando la historia detrÃ¡s de su
+trabajo.
+\end{foreword}
+
+\begin{abstract}
+Here goes the english abstract.
+\end{abstract}
+
+\begin{resumen}
+AquÃ­ se redacta el resumen en espaÃ±ol.
+\end{resumen}
+
+\pagenumbering{arabic}
+
+\part{Primera parte}
+
+\chapter{Sobre el estÃ­lo}
+
+Esto es un ejemplo para el paquete UNAMThesis, tiene un formato personalizable para tesis segÃºn las normas de la Universidad Nacional AutÃ³noma de MÃ©xico.
+
+Los datos de la portada son de ejemplo y deberÃ­an ser reemplazados.
+
+\section{Uso del paquete}
+Escudo-UNAM and Escudo-Instituto deben estar en la misma carpeta que el documento. El estilo busca estas imÃ¡genes para armar la carÃ¡tula de la tesis. Se puede personalizar tambiÃ©n los logos usando: \texttt{\textbackslash{}logounam\{lugar\_archivo\}} y \texttt{\textbackslash{}logoinstitute\{lugar\_archivo\}} para definir su ubicaciÃ³n.
+
+El comando \texttt{\textbackslash{}university\{nombre de universidad\}} permite cambiar el nombre de la universidad, por defecto tiene el de la UNAM.
+
+AdemÃ¡s, los comandos \texttt{\textbackslash{}institute\{nombre de instituto\}}, \texttt{
+\textbackslash{}rcenter\{nombre de centro de investigaciÃ³n\}},
+\texttt{\textbackslash{}faculty\{nombre de facultad\}}, o
+\texttt{\textbackslash{}school\{nombre de escuela\}} 
+permiten establecer los nombres de donde se llevaron a cabo los estudios. La lÃ³gica de usar comandos diferentes es que se elija automÃ¡ticamente el gÃ©nero correcto, pero los comandos son opcionales.
+
+En caso de omitir el nombre del instituto, el gÃ©nero por defecto es femenito ('la') para coincidir con 'universidad'.
+Se puede cambiar esto usando \texttt{\textbackslash{}@instituteartm} para cambiarlo a masculino ('el') o \texttt{\textbackslash{}@instituteartf} para cambiarlo a femenino
+('la'). El comando \texttt{\textbackslash{}department\{nombre del programa del departamento\}}es opcional.
+
+
+El estilo implementa tambiÃ©n entornos para citas de aperturas
+(\texttt{\textbackslash{}begin\{
+quotenat\} ... \textbackslash{}end\{quotenat\}})
+que se usan muchas veces al inicio de los capÃ­tulos.
+
+El estilo bibliogrÃ¡fico de UNAMThesis es compatible con natbib.
+
+\chapter{CaracterÃ­sticas del estilo}
+
+\begin{quotenat}
+\textsl{I worry that, especially as the Millennium edges nearer,\\
+pseudo-science and superstition will seem year by year more tempting,\\
+the siren song of unreason more sonorous and attractive.}\\
+--- \textsc{Carl Sagan, \textit{The Demon-Haunted World} (1995)}
+\end{quotenat}
+
+\section{Section}
+
+Este estilo tiene muchas etapas de seccionamiento.
+
+\subsection{Subsection}
+
+Texto de subsection.
+
+\subsubsection{Subsubsection}
+
+Texto de subsubsection.
+
+\paragraph{Paragraph}
+
+Texto de paragraph.
+
+\subparagraph{Subparagraph}
+
+Texto de subparagraph.
+
+\begin{table}
+\centering
+\caption[Tabla de ejemplo]{Tabla de ejemplo. Se muestran los elementos bÃ¡sicos que se usan al declarar una tabla, y se aprovecha para dar una breve descripciÃ³n de las opciones de configuraciÃ³n.}
+\label{tab:tabla_ejemplo}
+\renewcommand{\arraystretch}{1.3}% Aumenta la separaciÃ³n entre renglones
+\begin{tabular}{lm{0.5\linewidth}} \toprule
+\multicolumn{1}{c}{\textbf{Valor}} & \multicolumn{1}{c}{\textbf{DescripciÃ³n}} \\ \midrule
+\textbf{l} & Columna alineada a la izquierda. \\
+\textbf{c} & Columna centrada. \\
+\textbf{r} & Columna alineada a la derecha. \\
+\textbf{p\{'width'\}} & Columna de pÃ¡rrafo alineada verticalmente arriba. Ãštil para cuando hay mucho texto. \\
+\textbf{m\{'width'\}} & Columna de pÃ¡rrafo alineada verticalmente en el centro. El estilo que usa esta tabla\\
+\textbf{b\{'width'\}} & Columna de pÃ¡rrafo alineada verticalmente en la parte de abajo. \\
+\textbf{|} & LÃ­nea vertical. \\
+\textbf{||} & Doble lÃ­nea vertical \\
+\textbf{@\{xx\}} & \emph{xx} especifica el separador de la columna. \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.5\textwidth]{Escudo-UNAM.pdf}
+\caption[Figura de ejemplo]{Figura de ejemplo. En la figura se observa el escudo de la UNAM que se usa en la portada, como una plantilla para el uso de imÃ¡genes. Se recomienda siempre usar imÃ¡genes vectoriales en formato PDF.}
+\label{fig:figura_ejemplo}
+\end{figure}
+
+
+\section{Etiquetas}
+
+Se puede aplicar diferentes formatos al texto como el de \emph{Ã©nfasis}
+
+Y tambiÃ©n se pueden aplicar diferentes estilos visuales como: \textbf{Bold}, \textit{Italics},
+\textrm{Roman}, \textsf{Sans Serif}, \textsl{Slanted}, \textsc{Small Caps},
+y \texttt{Typewriter}.
+
+TambiÃ©n se tienen estilos de tipografÃ­a para entornos matemÃ¡ticos: $\mathbb{BLACKBOARD}$
+$\mathbb{BOLD}$, $\mathcal{CALLIGRAPHIC}$, y $\mathfrak{fraktur}$. Hay que notar que el \emph{blackboard} y el \emph{calligraphic} solo se aplican correctamente a letras mayÃºsculas.
+
+Se pueden aplicar las etiquetas de tamaÃ±o: {\tiny tiny}, {\scriptsize scriptsize},
+{\footnotesize footnotesize}, {\small small}, {\normalsize normalsize},
+{\large large}, {\Large Large}, {\LARGE LARGE}, {\huge huge} y {\Huge Huge}.
+
+Se muestra a continuaciÃ³n un grupo de pÃ¡rrafos macadas como citas (quote):
+
+\begin{quote}
+The buck stops here. \emph{Harry Truman}
+
+Ask not what your country can do for you; ask what you can do for your
+country. \emph{John F Kennedy}
+
+I am not a crook. \emph{Richard Nixon}
+
+It's no exaggeration to say the undecideds could go one way or another.
+\emph{George Bush}
+
+I did not have sexual relations with that woman, Miss Lewinsky. \emph{Bill Clinton}
+\end{quote}
+
+La etiqueta de \emph{quotation} se usa para citas que ocupan mÃ¡s de un pÃ¡rrafo, a continuaciÃ³n estÃ¡ el inicio de emph{Alice's Adventures in Wonderland } por
+Lewis Carroll:
+
+\begin{quotation}
+Alice was beginning to get very tired of sitting by her sister on the bank,
+and of having nothing to do: once or twice she had peeped into the book her
+sister was reading, but it had no pictures or conversations in it, 'and what
+is the use of a book,' thought Alice 'without pictures or conversation?'
+
+So she was considering in her own mind (as well as she could, for the hot day
+made her feel very sleepy and stupid), whether the pleasure of making a
+daisy-chain would be worth the trouble of getting up and picking the daisies,
+when suddenly a White Rabbit with pink eyes ran close by her.
+
+There was nothing so very remarkable in that; nor did Alice think it so very
+much out of the way to hear the Rabbit say to itself, 'Oh dear! Oh dear! I
+shall be late!' (when she thought it over afterwards, it occurred to her that
+she ought to have wondered at this, but at the time it all seemed quite
+natural); but when the Rabbit actually took a watch out of its
+waistcoat-pocket, and looked at it, and then hurried on, Alice started to her
+feet, for it flashed across her mind that she had never before seen a rabbit
+with either a waistcoat-pocket, or a watch to take out of it, and burning with
+curiosity, she ran across the field after it, and fortunately was just in time
+to see it pop down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it, never once considering how in the
+world she was to get out again.
+\end{quotation}
+
+Se puede usar el entorno \emph{verbatim} cuando se quiere que \LaTeX {} conserve los espacios, como en un fragmento de cÃ³digo de programa:
+
+\begin{verbatim}
+#include <iostream>        // < > is used for standard libraries.
+void main(void)            // ''main'' method always called first.
+{
+  cout << ''Hello World.'';  // Send to output stream.
+}
+\end{verbatim}
+
+\section{MatemÃ¡ticas y texto}
+
+Sea $H$ un espacio de Hilbert, $C$ un subespacio cerrado convexo de $H$, $T$
+mapa no-expansivo propio de $C$. Suponemos que conforme $n\rightarrow\infty$,
+$a_{n,k}\rightarrow0$ para cada $k$, y $\gamma_{n}=\sum_{k=0}^{\infty}\left(
+a_{n,k+1}-a_{n,k}\right)  ^{+}\rightarrow0.$ Entonces para cada $x$ en $C$,
+$A_{n}x=\sum_{k=0}^{\infty}a_{n,k}T^{k}x$ converge suavemente a un punto fijo de $T$ .
+
+La ecuaciÃ³n enumerada
+\begin{equation}
+u_{tt}-\Delta u+u^{5}+u\left|  u\right|  ^{p-2}=0\text{ in }\mathbf{R}
+^{3}\times\left[  0,\infty\right[  .\label{eqn1}
+\end{equation}
+Se numera automÃ¡ticamente como \ref{eqn1}.
+
+\section{Lista de entornos}
+
+Se pueden crear listas de viÃ±etas y nÃºmeros y descripciones.
+
+\begin{enumerate}
+\item Elemento 1
+
+\item Elemento 2
+
+\begin{enumerate}
+\item Lista enumerada anidada.
+
+\item Otro elemento de la lista enumerada.
+
+\begin{enumerate}
+\item Tercer nivel de la lista.
+
+\begin{enumerate}
+\item Cuarto y Ãºltimo nivel de la lista.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\begin{itemize}
+\item Lista de viÃ±etas
+
+\item Segundo elemento con viÃ±etas
+
+\begin{itemize}
+\item Segundo nivel de la viÃ±eta
+
+\begin{itemize}
+\item tercer nivel de la lista de viÃ±etas.
+
+\begin{itemize}
+\item Cuarto y Ãºltimo nivel de la lista anidada.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\begin{description}
+\item[Lista descriptiva] Cada lista descriptiva tiene un elemento con un tÃ©rmino seguido de la descripciÃ³n de dicho tÃ©rmino.
+
+\item[Bunyip] Bestia mÃ­tica de las leyendas Australianas.
+\end{description}
+
+\section{Entornos como teoremas}
+
+El estilo incluye muchos entornos que se comportan como teoremas:
+
+\begin{acknowledgement}
+Esto es un agradecimiento
+\end{acknowledgement}
+
+\begin{algorithm}
+Esto es un algoritmo
+\end{algorithm}
+
+\begin{axiom}
+Esto es un axioma
+\end{axiom}
+
+\begin{case}
+Esto es un caso
+\end{case}
+
+\begin{claim}
+Esto es una declaraciÃ³n
+\end{claim}
+
+\begin{conclusion}
+Esto es una conclusiÃ³n
+\end{conclusion}
+
+\begin{condition}
+Esto es una condiciÃ³n
+\end{condition}
+
+\begin{conjecture}
+Esto es una conjetura
+\end{conjecture}
+
+\begin{corollary}
+Esto es un corolario
+\end{corollary}
+
+\begin{criterion}
+Esto es un criterio
+\end{criterion}
+
+\begin{definition}
+Esto es una definiciÃ³n
+\end{definition}
+
+\begin{example}
+Esto es un ejemplo
+\end{example}
+
+\begin{exercise}
+Esto es un ejercicio
+\end{exercise}
+
+\begin{lemma}
+Esto es un lemma
+\end{lemma}
+
+\begin{proof}
+Esto es la demostraciÃ³n.
+\end{proof}
+
+\begin{notation}
+Esto es una notaciÃ³n
+\end{notation}
+
+\begin{problem}
+Esto es un problema
+\end{problem}
+
+\begin{proposition}
+Esto es una proposiciÃ³n
+\end{proposition}
+
+\begin{remark}
+Esto es una observaciÃ³n
+\end{remark}
+
+\begin{solution}
+Esto es una soluciÃ³n
+\end{solution}
+
+\begin{summary}
+Esto es un resumen
+\end{summary}
+
+\begin{theorem}
+Esto es un teorema
+\end{theorem}
+
+\begin{proof}
+[DemostraciÃ³n]Esta es la demostraciÃ³n.
+\end{proof}
+
+\appendix 
+
+\chapter{El primer apÃ©ndice}
+
+La instrucciÃ³n \emph{appendix} solo se usa una vez. ApÃ©ndices posteriores se pueden crear usando las instrucciones de \emph{chapter}, \emph{section} y demÃ¡s.
+
+\bibliographystyle{UNAMThesis}
+\bibliography{testBib}
+\end{document}
