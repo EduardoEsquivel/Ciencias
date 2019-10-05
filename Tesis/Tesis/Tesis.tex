@@ -1,5 +1,5 @@
 \documentclass[11pt,spanish]{report}
-\usepackage[square]{natbib}
+\usepackage{biblatex}
 \usepackage[spanish,mexico]{babel}
 \usepackage{UNAMThesis}
 \usepackage{amsmath}
@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 
 \usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{textcomp}
@@ -40,6 +41,7 @@
 \newtheorem{summary}{Resumen}[section]
 \newenvironment{proof}[1][DemostraciÃ³n]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
 
+\addbibresource{Bibliografia.bib}
 
 \begin{document}
 
@@ -412,6 +414,5 @@ Esto es un teorema
 
 La instrucciÃ³n \emph{appendix} solo se usa una vez. ApÃ©ndices posteriores se pueden crear usando las instrucciones de \emph{chapter}, \emph{section} y demÃ¡s.
 
-\bibliographystyle{UNAMThesis}
-\bibliography{testBib}
+\printbibliography
 \end{document}

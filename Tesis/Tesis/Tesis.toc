@@ -1,15 +1,30 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
 \contentsline {part}{I\hspace {1em}Primera parte}{1}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Sobre el est\IeC {\~A}\IeC {\-}lo}{2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Uso del paquete}{2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Caracter\IeC {\~A}\IeC {\-}sticas del estilo}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Section}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Subsection}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Subsubsection}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Paragraph}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Subparagraph}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Etiquetas}{6}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Matem\IeC {\~A}\IeC {\textexclamdown }ticas y texto}{7}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Lista de entornos}{8}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Entornos como teoremas}{9}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}El primer ap\IeC {\~A}\IeC {\textcopyright }ndice}{11}% 
