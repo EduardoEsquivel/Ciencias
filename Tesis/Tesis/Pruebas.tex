@@ -1,0 +1,67 @@
+\documentclass[10pt,spanish]{book}
+\usepackage{amsmath}
+\usepackage[spanish,mexico]{babel}
+\usepackage{bookman}
+\usepackage{etoolbox}
+\usepackage[T1]{fontenc}
+\usepackage[lmargin=3.0cm, rmargin=1.0cm,tmargin=2.50cm,bmargin=2.50cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+%\ChNameVar{\large\fontfamily{pbk}\selectfont
+%\color{black}}
+%\ChRuleWidth{2pt}
+%\ChNumVar{\large\fontfamily{pbk}\selectfont
+%\color{black}}
+%\ChTitleVar{\Large\bfseries\fontfamily{phv}\selectfont\scshape\color{black}}
+
+\titleformat{\chapter}[display]
+{\large\fontfamily{pvh}\filleft}
+{\titlerule[0pt]%
+\vspace{1ex}% 
+\chaptertitlename\ \thechapter}
+{20pt}
+{\Huge}[\vspace{1ex}{\titlerule[0pt]}]
+
+\titleformat{name=\chapter,numberless}[display]
+{\fontfamily{pbk}\Huge\filleft\bfseries}
+{}
+{0pt}
+{\titlerule[2pt]
+\vspace{1ex}%
+\Huge}[\vspace{1ex}{\titlerule[2pt]}]
+
+\titlespacing*{\chapter} {0pt}{20pt}{20pt}   %% adjust these numbers
+\titlespacing*{name=\chapter,numberless} {0pt}{20pt}{20pt}   %% adjust these n
+
+\begin{document}
+
+\chapter{Resonadores ópticos}
+
+%\ChNameUpperCase{CAPÍTULO}
+Esta es una ecuación en un ambiente.
+\begin{equation}
+x^{2} = -1
+\end{equation}
+
+Esta es una ecuación en línea \,\, \( x^{2} = -1\) \newline
+
+Esta es una ecuación desplegada \[ x^{2} = -1\]
+
+Esta es una ecuación desplegada y encerrada en un rectángulo
+
+\[ \boxed{ x^{2} = -1 } \]
+
+Esta es una ecuación desplegada, enumerada y encerrada en un rectángulo
+\begin{equation}
+\boxed{ x^{2} = -1 }
+\end{equation}
+
+De esta forma hacemos un salto de \\ línea 
+\newline
+\lipsum
+
+\end{document}
